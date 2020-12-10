@@ -1,0 +1,17 @@
+{
+  "name": "samplewebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/webApp/app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.9",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.0"
+  }
+}
